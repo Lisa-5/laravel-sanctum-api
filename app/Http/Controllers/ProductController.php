@@ -10,7 +10,7 @@ class ProductController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()//: Response
+    public function index()
     {
       return Product::all();
     }
@@ -18,7 +18,7 @@ class ProductController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)//: Response
+    public function store(Request $request)
     {
       $request->validate([
         'name' => 'required',
@@ -32,7 +32,7 @@ class ProductController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id): Response
+    public function show(string $id)
     {
         return Product::find($id);
     }
@@ -40,17 +40,17 @@ class ProductController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id): Response
+    public function update(Request $request, string $id)
     {
         $product = Product::find($id);
-        $product->update($request->all);
+        $product->update($request->all());
         return $product;
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)//: Response
+    public function destroy(string $id)
     {
         return Product::destroy($id);
     }
@@ -58,8 +58,8 @@ class ProductController extends Controller
     /**
      * Search for a name.
      */
-    public function search($name): Response
+    public function search($name)
     {
-        return Product::where($name, 'like', '%'.$name.'%')->get();
+        return Product::where('name', 'like', '%'.$name.'%')->get();
     }
 }
