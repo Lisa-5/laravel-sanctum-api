@@ -1,4 +1,6 @@
-This REST API with Sanctum Authentication is based on a tutorial by Brad Traversy  https://www.youtube.com/watch?v=MT-GJQIY3EU&t=210s
+This REST API with Sanctum Authentication is based on a tutorial by Brad Traversy  
+
+https://www.youtube.com/watch?v=MT-GJQIY3EU&t=210s
 
 
 
