@@ -1,6 +1,10 @@
-This REST API with Sanctum Authentication is based on a tutorial by Brad Traversy  
+This REST API with Sanctum Authentication is based on a tutorial by Brad Traversy.
+
+Technology used Lavavel and MySQL.
 
 https://www.youtube.com/watch?v=MT-GJQIY3EU&t=210s
+
+----------------------------------------------------------------------------------
 
 
 
